@@ -30,16 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `Agent` (
   `name` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `nohp` varchar(100) NOT NULL
+  `nohp` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `adminn`
 --
 
-INSERT INTO `agent` (`name`, `email`, `password`, `nohp`) VALUES
-(`ali`, `ali@gmail.com`, `12345`, `0123546754` );
+INSERT INTO `agent` (`name`, `email`, `nohp`,`password`) VALUES
+(`ali`, `ali@gmail.com`,`0123546754`, `12345`,  );
 
 -- --------------------------------------------------------
 
