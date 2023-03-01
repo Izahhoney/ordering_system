@@ -2,7 +2,7 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('localhost', 'root', '', 'projectairasia');
+$db = mysqli_connect('localhost', 'root', '', 'ordering_sytem');
 
 // variable declaration
 $Fullname = "";
