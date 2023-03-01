@@ -28,7 +28,7 @@ s0.parentNode.insertBefore(s1,s0);
 <div class="w3-container w3-pale-red">
 <p><center><h1> welcome to the shop </h1></center></p>
 
-<p><center><img src="RUNN.png" alt="honey" style="width:50%"></center></p>
+
 
 <div class="w3-container w3-pale-red">
 

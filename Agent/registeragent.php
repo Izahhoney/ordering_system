@@ -82,8 +82,8 @@ include('config.php');
 
 ?>
 
-<form class="form" action="dataregister.php" method="POST" style="width:100%;">
-<form action="dataregister.php">
+<form class="form" action="agentdataregister.php" method="POST" style="width:100%;">
+<form action="agentdataregister.php">
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to be an agent.</p>
