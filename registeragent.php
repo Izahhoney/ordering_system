@@ -95,13 +95,6 @@ include('config.php');
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <button type="submit" class="registerbtn">Register</button>
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter name" name="name" id="name" required>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
     <label for="nohp"><b>Phone no</b></label>
     <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
 
