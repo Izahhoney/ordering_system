@@ -1,5 +1,4 @@
-<?php include ('authentication.php');
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +71,7 @@ span.psw {
 
 <h2>Login Form</h2>
 
-<form action="authentication.php" method="post">  
+<form action="/authentication.php" method="post">  
   <div class="imgcontainer">
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
