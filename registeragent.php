@@ -98,10 +98,12 @@ include('config.php');
     <label for="nohp"><b>Phone no</b></label>
     <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" required>
 
-    
+    <label for="password-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" required>
+
     <button type="submit" class="registerbtn">Register</button>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
