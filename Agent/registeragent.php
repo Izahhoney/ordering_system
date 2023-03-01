@@ -102,8 +102,8 @@ include('config.php');
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <label for="phno"><b>Phone no</b></label>
-    <input type="text" placeholder="Enter phoneno" name="phno" id="phno" required>
+    <label for="nohp"><b>Phone no</b></label>
+    <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
