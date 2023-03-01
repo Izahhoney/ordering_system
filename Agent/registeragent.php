@@ -92,22 +92,31 @@ include('config.php');
     <label for="name"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
 
-    <label for="age"><b>Age</b></label>
-    <input type="text" placeholder="Enter Age" name="age" id="age" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <label for="gender"><b>Gender:</b></label> <br></br>
-					<select id="gender" name="gender" style="width:10%;border-radius:10px;height:37px;"required> 
-						<option></option>
-						<option>Male</option>
-						<option>Female</option>
-					</select>
-
-      <br></br>
+    <button type="submit" class="registerbtn">Register</button>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <button type="submit" class="registerbtn">Register</button>
 
+    <label for="phno"><b>Phone no</b></label>
+    <input type="text" placeholder="Enter phoneno" name="phno" id="phno" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+   
+
+    
+  </div>
   </form>
 </body>
 </html>
