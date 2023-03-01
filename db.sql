@@ -38,7 +38,7 @@ CREATE TABLE `Agent` (
 -- Dumping data for table `adminn`
 --
 
-INSERT INTO `agent` (`name`, `email`, `nohp`,`password`) VALUES
+INSERT INTO `Agent` (`name`, `email`, `nohp`,`password`) VALUES
 (`ali`, `ali@gmail.com`,`0123546754`, `12345`,  );
 
 -- --------------------------------------------------------
