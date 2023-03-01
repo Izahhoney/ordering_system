@@ -1,57 +1,98 @@
-<?php include('function.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Complaint Airasia</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
 </head>
 <body>
 
-<style>
-.header {
-	width: 40%;
-	margin: 50px auto 0px;
-	color: white;
-	background: #da4646;
-	text-align: center;
-	border: 1px solid #e35300;
-	border-bottom: none;
-	border-radius: 10px 10px 0px 0px;
-	padding: 5px;
-}
-.btn {
-	padding: 10px;
-	font-size: 15px;
-	color: rgb(246, 17, 17);
-	background: #e83408;
-	border: none;
-	border-radius: 5px;
-}
-</style>
+<h2>Login Form</h2>
 
-	<div class="header">
-		<h2>Login</h2>
-	</div>
-	<form method="post" action="" >
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
-		<?php //echo display_error(); ?>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-		<div class="input-group">
-			<label>Email</label>
-			<input type="email" name="email" required>
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="password" name="password"required>
-		</div>
-		<div class="input-group">
-		<input type="submit" class="" name="login_btn" value="Log in" >
-		</div>
-		<p>
-			Not yet a member? <a href="register.php">Sign up</a>
-		</p>
-	</form>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
 </body>
 </html>
