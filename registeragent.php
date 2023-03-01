@@ -96,10 +96,10 @@ include('config.php');
     <input type="text" placeholder="Email: @yahoo.com" name="email" id="email" required>
 
     <label for="Address"><b>Address</b></label>
-    <input type="text" placeholder="Enter your address" name="email" id="email" required>
+    <input type="text" placeholder="Enter your address" name="address" id="address" required>
 
-    <label for="Address"><b>Phone no</b></label>
-    <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
+    <label for="Phoneno"><b>Phone no</b></label>
+    <input type="text" placeholder="Enter phoneno" name="phoneno" id="Phone" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
