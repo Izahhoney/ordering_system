@@ -109,6 +109,8 @@ include('config.php');
     <hr>
 
     <button type="submit" class="registerbtn">Register</button>
+    <p>Already have an account? <button type="submit" class="registerbtn">Register</button> 
+   
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
