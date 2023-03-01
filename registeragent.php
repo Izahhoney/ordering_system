@@ -99,10 +99,11 @@ include('config.php');
     <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="psw" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="psw" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
 
     <button type="submit" class="registerbtn">Register</button>
     <hr>
