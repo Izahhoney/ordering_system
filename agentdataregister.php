@@ -15,9 +15,4 @@ values ('$_POST[name]','$_POST[email]','$_POST[nohp]','$_POST[password]')";
 echo "<script
 type='text/jscript'>alert('Register agent has been submitted!')</script>";
 header('refresh:1 url=index.php');
-
-echo "<script
-type='text/jscript'>alert('Register agent has been submitted!')</script>";
-header('refresh:1 url=index.php');
-
 ?>

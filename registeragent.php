@@ -89,13 +89,16 @@ include('config.php');
     <p>Please fill in this form to be an agent.</p>
     <hr>
 
-    <label for="name"><b>Name</b></label>
+    <label for="Fullname"><b>Fullame</b></label>
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
 
-    <label for="email"><b>Email</b></label>
+    <label for="Email"><b>Email</b></label>
     <input type="text" placeholder="Email: @yahoo.com" name="email" id="email" required>
 
-    <label for="nohp"><b>Phone no</b></label>
+    <label for="Address"><b>Address</b></label>
+    <input type="text" placeholder="Enter your address" name="email" id="email" required>
+
+    <label for="Address"><b>Phone no</b></label>
     <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
 
     <label for="psw"><b>Password</b></label>

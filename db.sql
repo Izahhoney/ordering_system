@@ -18,28 +18,29 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db`
+-- Database: `ordering_system`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `register`
+-- Table structure for table `Agent`
 --
 
 CREATE TABLE `Agent` (
-  `name` varchar(100) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `nohp` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `Fullname` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `Phoneno` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `adminn`
 --
 
-INSERT INTO `Agent` (`name`, `email`, `nohp`,`password`) VALUES
-(`ali`, `ali@gmail.com`,`0123546754`, `12345`,  );
+INSERT INTO `Agent` (`Fullname`, `Email`, `Address`,`Phoneno`,`password`) VALUES
+(`ali`, `ali@gmail.com`,`Uitm cendering`,`0123546754`, `12345`,  );
 
 -- --------------------------------------------------------
 
