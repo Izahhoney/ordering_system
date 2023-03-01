@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 include 'config.php';
 
 $sql="INSERT INTO Agent (Fullname,Email, Address, Phoneno,Password)
-values ('$_POST[name]','$_POST[email]','$_POST[Address]','$_POST[Phoneno]','$_POST[Password]')";
+values ('$_POST[Fullname]','$_POST[Email]','$_POST[Address]','$_POST[Phoneno]','$_POST[Password]')";
 	if (!mysqli_query($conn,$sql)){
 		
 		die ('Error: ' .mysqli_error($conn));

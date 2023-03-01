@@ -90,22 +90,22 @@ include('config.php');
     <hr>
 
     <label for="Fullname"><b>Fullame</b></label>
-    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+    <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required>
 
     <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Email: @yahoo.com" name="email" id="email" required>
+    <input type="text" placeholder="Email: @yahoo.com" name="Email" id="Email" required>
 
     <label for="Address"><b>Address</b></label>
-    <input type="text" placeholder="Enter your address" name="address" id="address" required>
+    <input type="text" placeholder="Enter your address" name="Address" id="Address" required>
 
     <label for="Phoneno"><b>Phone no</b></label>
-    <input type="text" placeholder="Enter phoneno" name="phoneno" id="Phone" required>
+    <input type="text" placeholder="Enter phoneno" name="Phoneno" id="Phoneno" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <label for="Password"><b>Password</b></label>
+    <input type="Password" placeholder="Enter Password" name="Password" id="Password" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <label for="Password-repeat"><b>Repeat Password</b></label>
+    <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required>
     <hr>
 
     <button type="submit" class="registerbtn">Register</button>
