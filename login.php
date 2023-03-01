@@ -1,4 +1,4 @@
-<?php include('functions.php'); ?>
+<?php include('function.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
