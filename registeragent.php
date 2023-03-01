@@ -93,7 +93,7 @@ include('config.php');
     <input type="text" placeholder="Enter Name" name="name" id="name" required>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input type="text" placeholder="Email: @yahoo.com" name="email" id="email" required>
 
     <label for="nohp"><b>Phone no</b></label>
     <input type="text" placeholder="Enter phoneno" name="nohp" id="nohp" required>
