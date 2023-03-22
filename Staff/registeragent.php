@@ -19,7 +19,7 @@ include('config.php');
 
  
     <h1>Register Agent</h1>
-    <p>Please fill in this form to be an agent.</p>
+    <p>Please fill in this form to be register agent.</p>
     <hr>
 
    
