@@ -18,7 +18,7 @@ include('config.php');
 <form action="agentdataregister.php">
 
  
-    <h1>Register</h1>
+    <h1>Register Agent</h1>
     <p>Please fill in this form to be an agent.</p>
     <hr>
 
