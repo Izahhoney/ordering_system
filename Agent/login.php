@@ -10,7 +10,7 @@
 
 <h2>Login Form</h2>
 
-<form action="product.php">
+<form action="homepage.php">
  
   <img src="img_avatar2.png" alt="Avatar" class="avatar"><br></br>
 
