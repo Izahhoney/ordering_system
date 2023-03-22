@@ -111,7 +111,7 @@ include('config.php');
     <button type="submit" class="registerbtn">Register</button>
    
     <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <p>By creating an account you agree to our <a href="login.php">Terms & Privacy</a>.</p>
 
    
 
