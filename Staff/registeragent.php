@@ -23,7 +23,7 @@ include('config.php');
     <hr>
 
    
-    <label for="Fullname"><b>Fullame</b></label><br></br>
+    <label for="Fullname"><b>Fullame</b></label>
     <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required><br></br>
 
 
