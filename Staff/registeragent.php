@@ -42,11 +42,11 @@ include('config.php');
 
     <label for="Password-repeat"><b>Repeat Password</b></label>
     <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
-    <hr>
+   
 
     <button type="submit" class="registerbtn">Register</button><br></br>
    
-    <hr>
+
     <p>By creating an account you agree to our <a href="login.php">Terms & Privacy</a>.</p><br></br>
 
   </form>
