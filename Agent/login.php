@@ -12,20 +12,20 @@
 
 <form action="product.php">
  
-  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  <img src="img_avatar2.png" alt="Avatar" class="avatar"><br></br>
 
     <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" required><br></br>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" required><br></br>
         
-    <button type="submit">Login</button>
+    <button type="submit">Login</button><br></br>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 
-    <button type="button" class="cancelbtn">Cancel</button>
+    <button type="button" class="cancelbtn">Cancel</button><br></br>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
