@@ -7,3 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Product Page</title>
+
+<body>
+<p><center><h1> welcome to the shop </h1></center></p>
+</body>
+</html>
