@@ -12,15 +12,11 @@
     <h1>Register Agent</h1>
     <p>Please fill in this form to be register agent.</p>
     
-
-   
     <label for="Fullname"><b>Fullame</b></label>
     <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required><br></br>
 
-    <label>Email Address</label>
-    <input type="Email" name="email" id="email" placeholder="Enter email address" required>
-
-   
+    <label for="Email"><b>Email</b></label>
+    <input type="text" placeholder="Email: @yahoo.com" name="Email" id="Email" required><br></br>
 
 
     <label for="Address"><b>Address</b></label>
