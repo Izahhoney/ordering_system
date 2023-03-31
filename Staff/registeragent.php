@@ -6,13 +6,6 @@
 <body>
 <?php 
 
-if(!session_id())
-{
-session_start();
-}
-include('config.php');
-
-?>
 
 <form class="form" action="agentdataregister.php" method="POST">
 <form action="agentdataregister.php">
