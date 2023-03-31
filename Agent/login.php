@@ -2,7 +2,7 @@
 include_once 'config.php';
 include_once 'agent.php';
 
-$database = new Database();
+$db = new Database();
 $db = $ordering_system->getConnection();
 
 $customer = new Customer($db);
