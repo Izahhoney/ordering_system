@@ -1,4 +1,4 @@
-
+<?php   include ('config.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,7 @@
 
 <form action="homepage.php">
  
-  <img src="img_avatar2.png" alt="Avatar" class="avatar"><br></br>
+  <img src="#" alt="Avatar" class="avatar"><br></br>
 
     <label for="Email"><b>Email</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required><br></br>
