@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stlyesheet" type="text/css" href="stlye.css">
+<link rel="stlyesheet" href="stlye.css">
 </head>
 <body>
 <h2>Login Form</h2>

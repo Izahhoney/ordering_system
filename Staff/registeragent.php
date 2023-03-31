@@ -11,7 +11,7 @@
  
     <h1>Register Agent</h1>
     <p>Please fill in this form to be register agent.</p>
-    <hr>
+    
 
    
     <label for="Fullname"><b>Fullame</b></label>
