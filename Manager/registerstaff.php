@@ -33,9 +33,11 @@ include('config.php');
     <label for="Email"><b>Email</b></label>
     <input type="text" placeholder="Enter email" name="Email" id="Email" required><br></br>
 
-    <label for="Position"><b>Position</b></label>
-    <input type="radio" name="position" value="Staff"/>
-    <input type="radio" name="position" value="Manager"/>
+    <label for="Position"><b>Position:</b></label>
+    <select name="Position">
+    <option value="Staff"></option>
+    <option value="Manager"></option>
+    </select></p>
 
     <label for="Address"><b>Address:</b></label>
     <input type="text" placeholder="Enter Address" name="Address" id="Address" required><br></br>
