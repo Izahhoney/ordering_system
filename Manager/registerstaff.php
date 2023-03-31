@@ -35,8 +35,8 @@ include('config.php');
 
     <label for="Position"><b>Position:</b></label>
     <select name="Position">
-    <option value="Staff"></option>
-    <option value="Manager"></option>
+    <option value="Staff">Staff</option>
+    <option value="Manager">Manager</option>
     </select></p>
 
     <label for="Address"><b>Address:</b></label>
