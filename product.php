@@ -9,6 +9,6 @@
     <title>Product Page</title>
 
 <body>
-<p><center><h1> welcome to the shop </h1></center></p>
+<p><center><h1> Catalog </h1></center></p>
 </body>
 </html>

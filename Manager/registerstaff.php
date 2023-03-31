@@ -14,8 +14,8 @@ include('config.php');
 
 ?>
 
-<form class="form" action="agentdataregister.php" method="POST">
-<form action="agentdataregister.php">
+<form class="form" action="staffdataregister.php" method="POST">
+<form action="staffdataregister.php">
 
  
     <h1>Register Agent</h1>
@@ -23,24 +23,28 @@ include('config.php');
     <hr>
 
    
-    <label for="Fullname"><b>Fullame</b></label>
-    <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required><br></br>
+    <label for="StaffID"><b>StaffID</b></label>
+    <input type="text" placeholder="Enter ID" name="StaffID" id="StaffID" required><br></br>
 
+
+    <label for="Fullname"><b>Fullname</b></label>
+    <input type="text" placeholder="Enter a name" name="Fullname" id="Fullname" required><br></br>
 
     <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Email: @yahoo.com" name="Email" id="Email" required><br></br>
+    <input type="text" placeholder="Enter email" name="Email" id="Email" required><br></br>
+
+    <label for="Position"><b>Position</b></label>
+    <input type="radio" name="position" value="Staff"/>
+    <input type="radio" name="position" value="Manager"/>
+
+    <label for="Address"><b>Address:</b></label>
+    <input type="text" placeholder="Enter Address" name="Address" id="Address" required><br></br>
 
 
-    <label for="Address"><b>Address</b></label>
-    <input type="text" placeholder="Enter your address" name="Address" id="Address" required><br></br>
-
-    <label for="Phoneno"><b>Phone no</b></label>
-    <input type="text" placeholder="Enter phoneno" name="Phoneno" id="Phoneno" required><br></br>
-
-    <label for="Password"><b>Password</b></label>
+    <label for="Password"><b>Password:</b></label>
     <input type="Password" placeholder="Enter Password" name="Password" id="Password" required><br></br>
 
-    <label for="Password-repeat"><b>Repeat Password</b></label>
+    <label for="Password-repeat"><b>Repeat Password:</b></label>
     <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
    
 

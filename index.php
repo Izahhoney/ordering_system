@@ -12,11 +12,11 @@
 </head>
 <body>
 
-<p><center><h1> welcome to the shop </h1></center></p>
+<p><center><h1> Welcome to The Shop </h1></center></p>
 
 <body>
 
   <p><center><label><b>Let's Shopping</b></label></center></p>
-  <p><center><label><b><p class="login-register-text">Let's come and join us! <a href="registeragent.php">Register Here</a>.</p></b></label></center></p>
+  <p><center><label><b><p class="#">Let's come and join us! <a href="#">Register Here</a>.</p></b></label></center></p>
 </body>
 </html>
