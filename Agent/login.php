@@ -1,4 +1,4 @@
-<?php   include ('config.php') ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,7 @@
 </style>
 </head>
 <body>
-
+<?php   include ('config.php') ?>
 <h2>Login Form</h2>
 
 <form action="homepage.php">

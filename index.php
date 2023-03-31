@@ -17,6 +17,6 @@
 <body>
 
   <p><center><label><b>Let's Shopping</b></label></center></p>
-  <p><center><label><b><p class="#">Let's come and join us! <a href="#">Register Here</a>.</p></b></label></center></p>
+  <p><center><label><b><p class="#">Let's come and join us! <a href="#">..</a>.</p></b></label></center></p>
 </body>
 </html>
