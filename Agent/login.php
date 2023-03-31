@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stlyesheet" type="text/css" href="stlye.css">
 </style>
 </head>
 <body>
@@ -20,7 +20,8 @@
         
     <button type="submit">Login</button> <button type="button" class="cancelbtn">Cancel</button><br></br>
     <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
+    
+    <input type="checkbox" checked="checked" name="remember"> Remember me
     </label><br></br>
 
     
