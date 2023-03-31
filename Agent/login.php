@@ -18,12 +18,12 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required><br></br>
         
-    <button type="submit">Login</button><br></br>
+    <button type="submit">Login</button><br></br>  <button type="button" class="cancelbtn">Cancel</button><br></br>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label><br></br>
 
-    <button type="button" class="cancelbtn">Cancel</button><br></br>
+    
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
