@@ -18,8 +18,8 @@ include('config.php');
 <form action="staffdataregister.php">
 
  
-    <h1>Register Agent</h1>
-    <p>Please fill in this form to be register agent.</p>
+    <h1>Register Staff</h1>
+    <p>Please fill in this form.</p>
     <hr>
 
    
@@ -29,6 +29,9 @@ include('config.php');
 
     <label for="Fullname"><b>Fullname</b></label>
     <input type="text" placeholder="Enter a name" name="Fullname" id="Fullname" required><br></br>
+
+    <label for="Phoneno"><b>Phoneno</b></label>
+    <input type="text" placeholder="Enter Phoneno" name="Phoneno" id="Phoneno" required><br></br>
 
     <label for="Email"><b>Email</b></label>
     <input type="text" placeholder="Enter email" name="Email" id="Email" required><br></br>
