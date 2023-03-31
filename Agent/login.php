@@ -1,34 +1,65 @@
+<?php 
+include_once 'config.php';
+include_once 'class/Agent.php';
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+$database = new Database();
+$db = $ordering_system->getConnection();
 
-</style>
-</head>
-<body>
-<?php   include ('config.php') ?>
-<h2>Login Form</h2>
+$customer = new Customer($db);
 
-<form action="homepage.php">
- 
-  <img src="#" alt="Avatar" class="avatar"><br></br>
+if($customer->loggedIn()) {	
+	header("Location: index.php");	
+}
 
-    <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required><br></br>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required><br></br>
-        
-    <button type="submit">Login</button><br></br>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label><br></br>
-
-    <button type="button" class="cancelbtn">Cancel</button><br></br>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
-</body>
-</html>
+$loginMessage = '';
+if(!empty($_POST["login"]) && !empty($_POST["email"]) && !empty($_POST["password"])) {	
+	$customer->email = $_POST["email"];
+	$customer->password = $_POST["password"];	
+	$customer->loginType = $_POST["loginType"];
+	if($customer->login()) {
+		header("Location: index.php");	
+	} else {
+		$loginMessage = 'Invalid login! Please try again.';
+	}
+} else {
+	$loginMessage = 'Fill all fields.';
+}
+include('inc/header.php');
+?>
+<title>OOSTLR: Demo OnlineOrdering Systemfor Titan Life Resources</title>
+<?php include('inc/container.php');?>
+<div class="content"> 
+	<div class="container-fluid">			
+        <div class="col-md-6">                    
+		<div class="panel panel-info">
+			<div class="panel-heading" style="background:#5bc0de;color:white;">
+				<div class="panel-title">Customer Log In</div>                        
+			</div> 
+			<div style="padding-top:30px" class="panel-body" >
+				<?php if ($loginMessage != '') { ?>
+					<div id="login-alert" class="alert alert-danger col-sm-12"><?php echo $loginMessage; ?></div>                            
+				<?php } ?>
+				<form id="loginform" class="form-horizontal" role="form" method="POST" action="">                                    
+					<div style="margin-bottom: 25px" class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" class="form-control" id="email" name="email" value="<?php if(!empty($_POST["email"])) { echo $_POST["email"]; } ?>" placeholder="email" style="background:white;" required>                                        
+					</div>                                
+					<div style="margin-bottom: 25px" class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" class="form-control" id="password" name="password" value="<?php if(!empty($_POST["password"])) { echo $_POST["password"]; } ?>" placeholder="password" required>
+					</div>						
+					
+					<div style="margin-top:10px" class="form-group">                               
+						<div class="col-sm-12 controls">
+						  <input type="submit" name="login" value="Login" class="btn btn-info">						  
+						</div>						
+					</div>					
+					
+					
+				</form>   
+			</div>                     
+		</div>  
+	</div>       
+    </div>        
+		
+<?php include('inc/footer.php');?>
