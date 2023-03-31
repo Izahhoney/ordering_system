@@ -14,5 +14,5 @@ values ('$_POST[Fullname]','$_POST[Email]','$_POST[Address]','$_POST[Phoneno]','
 
 echo "<script
 type='text/jscript'>alert('Register agent has been submitted!')</script>";
-header('refresh:1 url=index.php');
+header('refresh:1 url=registeragent.php');
 ?>
