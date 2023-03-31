@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stlyesheet" type="text/css" href="stlye.css">
-</style>
 </head>
 <body>
-<?php   include ('config.php') ?>
 <h2>Login Form</h2>
 
 <form action="homepage.php">
