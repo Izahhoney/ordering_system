@@ -10,7 +10,7 @@
 
  
     <h1>Register Agent</h1>
-    <p>Please fill in this form to be register agent.</p>
+    <p>Please fill in this form to register agent.</p>
     
     <label for="Fullname"><b>Fullame</b></label>
     <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required><br></br>
