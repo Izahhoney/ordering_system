@@ -4,55 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REGISTER | STAFF</title>
+    <title>Staff Register</title>
+    <link rel="stylesheet" href="mstyle.css">
 </head>
 <body>
-<form method="post" action="staffdataregister.php">
-  <div class="staff container">
-    <h1>Staff Registration</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
 
-    <label for="id"><b>Staff ID:</b></label>
-    <input type="text" placeholder="Enter Staff Id" name="staffid" id="staffid" required>
-    <hr>
+<header>Staff Registeration</header>
+<form class="form" action="staffregisterdata.php" method="POST"> 
+<form action="staffregisterdata.php"> 
+    <section class="container">
 
-    <label for="fullname"><b>Name:</b></label>
-    <input type="text" placeholder="Enter name" name="staff_name" id="staff_name" required>
-    <hr>
+            <div class="input-box">
+                <label>Staff Id</label>
+                <input type="text" placeholder="Enter staff id" name="staff_id" id="staff_id" required><br></br> 
+ 
+            </div>
+       
+            <div class="input-box">
+                <label>E-mail</label>
+                <input type="text" placeholder="Enter staff email" name="staff_email" id="staff_email" required><br></br> 
+ 
+            </div>
 
-    <label for="email"><b>Email:</b></label>
-    <input type="text" placeholder="Enter email" name="staff_email" id="staff_email" required>
-    <hr>
+            <div class="input-box">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter staff full name" name="staff_name" id="staff_name" required><br></br> 
+ 
+            </div>
 
-    <label for="address"><b>Address:</b></label>
-    <input type="text" placeholder="Enter address" name="staff_address" id="staff_address" required>
-    <hr>
+            <div class="input-box">
+                <label>Address</label>
+                <input type="text" placeholder="Enter staff address" name="staff_address" id="staff_address" required><br></br> 
+ 
+            </div>
 
-    <label for="phone"><b>HP Number:</b></label>
-    <input type="text" placeholder="Enter Your Phone Number" name="staff_phoneno" id="staff_phoneno" required>
-    <hr>
+            <div class="input-box">
+                <label>H/P Number</label>
+                <input type="text" placeholder="Enter staff H/P No" name="staff_hpno" id="staff_hpno" required><br></br> 
+ 
+            </div>
 
-    <label for="staff_position"><b>Choose a Position:</b></label>
-    <select name="staff_position" id="staff_position">
-    <option value="Staff">Staff</option>
-    <option value="Manager">Manager</option>
-  </select><br><br>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="text" placeholder="Enter staff password" name="staff_password" id="staff_password" required><br></br> 
+ 
+            </div>
 
-    <label for="password"><b>Password:</b></label>
-    <input type="password" placeholder="Enter Password" name="staff_password" id="staff_password" required>
-    <hr>
+            <div class="input-box">
+                <label>Position</label>
+                <input type="text" placeholder="Enter staff password" name="staff_position" id="staff_position" required><br></br> 
+ 
+            </div>
 
-    <label for="Password-repeat"><b>Repeat Password:</b></label>
-    <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
-    <hr>
+            <button type="submit" class="registerbtn">Register</button>
 
-    <input type="submit" value="Register">
-  </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="staffdataregister.php">Log in</a>.</p>
-  </div>
-</form>
 </body>
 </html>
