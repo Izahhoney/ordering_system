@@ -25,7 +25,7 @@
     <input type="text" placeholder="Enter address" name="agent_address" id="agent_address" required>
     <hr>
 
-    <label for="phoneno"><b>Email:</b></label>
+    <label for="phoneno"><b>HP Number:</b></label>
     <input type="text" placeholder="Enter Email" name="agent_phoneno" id="agent_phoneno" required>
     <hr>
 
