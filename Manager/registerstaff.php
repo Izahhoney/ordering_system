@@ -14,7 +14,7 @@
     <hr>
 
     <label for="id"><b>Staff ID:</b></label>
-    <input type="text" placeholder="Enter Staff Id" name="staff_id" id="staffid" required>
+    <input type="text" placeholder="Enter Staff Id" name="staffID" id="staffID" required>
     <hr>
 
     <label for="fullname"><b>Name:</b></label>
@@ -30,7 +30,7 @@
     <hr>
 
     <label for="phoneno"><b>HP Number:</b></label>
-    <input type="text" placeholder="Enter Email" name="staff_phoneno" id="staff_phoneno" required>
+    <input type="text" placeholder="Enter Your Phone Number" name="staff_phoneno" id="staff_phoneno" required>
     <hr>
 
     <label for="staff_position"><b>Choose a Position:</b></label>
