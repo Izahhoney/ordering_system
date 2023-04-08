@@ -33,8 +33,8 @@
     <input type="text" placeholder="Enter Email" name="staff_phoneno" id="staff_phoneno" required>
     <hr>
 
-    <label for="position"><b>Choose a Position:</b></label>
-    <select name="position" id="staff_position">
+    <label for="staff_position"><b>Choose a Position:</b></label>
+    <select name="staff_position" id="staff_position">
     <option value="Staff">Staff</option>
     <option value="Manager">Manager</option>
   </select><br><br>
