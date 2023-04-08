@@ -47,8 +47,5 @@ if (isset($_SESSION['staff_id']) && isset($_SESSION['staff_email'])) {
 </html>
 <?php 
 
-}else{
-     header("Location: index.php");
-     exit();
-}
+
  ?>
