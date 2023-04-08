@@ -19,7 +19,7 @@ values ('$id','$fullname','$email','$address','$phone','$password','$position')"
 	}
 
 echo "<script
-type='text/jscript'>alert('Register agent has been submitted!')</script>";
-header('refresh:1 url=registeragent.php');
+type='text/jscript'>alert('Staff has been registered!')</script>";
+header('refresh:1 url=registerstaff.php');
 ?>
 
