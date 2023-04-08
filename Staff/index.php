@@ -14,9 +14,9 @@
             <p class="error"> <?php echo $_GET['error']; ?></p>
         <?php } ?>
         <label>Staff ID:</label>
-        <input type="text" name="id" placeholder="Please Enter Your Staff id" required><br>
+        <input type="text" name="staff_id" placeholder="Please Enter Your Staff id" required><br>
         <label>Password:</label>
-        <input type="password" name="password" placeholder="Password" required ><br> 
+        <input type="password" name="staff_password" placeholder="Password" required ><br> 
         <button type="submit">Login</button>
      </form>
     
