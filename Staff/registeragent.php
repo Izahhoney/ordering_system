@@ -7,7 +7,7 @@
     <title>REGISTER | AGENT</title>
 </head>
 <body>
-<form method="post" action="staff_registerData.php">
+<form method="post" action="agentdataregister.php">
   <div class="staff container">
     <h1>Agent Register</h1>
     <p>Please fill in this form to create an account.</p>
