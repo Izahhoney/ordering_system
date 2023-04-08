@@ -12,7 +12,7 @@ $password = filter_input(INPUT_POST, 'staff_password');
 $position = filter_input(INPUT_POST, 'staff_position');
 
 $sql="INSERT INTO staff (staffID,staff_name,staff_email, staff_address, staff_phoneno,staff_password,staff_position)
-values ('$_POST[id]','$_POST[fullname]','$_POST[email]','$_POST[address]','$_POST[phone]','$_POST[password]','$_POST[position]')";
+values ('$id','$fullname','$email','$address','$phone','$password','$position')";
 	if (!mysqli_query($conn,$sql)){
 		
 		die ('Error: ' .mysqli_error($conn));
