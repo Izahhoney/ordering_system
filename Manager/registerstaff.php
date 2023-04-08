@@ -13,7 +13,7 @@
     <p>Please fill in this form to create an account.</p>
     <hr>
 
-    <label for="sid"><b>Staff ID:</b></label>
+    <label for="id"><b>Staff ID:</b></label>
     <input type="text" placeholder="Enter Staff Id" name="staffid" id="staffid" required>
     <hr>
 

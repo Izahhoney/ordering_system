@@ -3,7 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'config.php';
-$sid = filter_input(INPUT_POST, 'staffid');
+$id = filter_input(INPUT_POST, 'staffid');
 $fullname = filter_input(INPUT_POST, 'staff_name');
 $email = filter_input(INPUT_POST, 'staff_email');
 $address = filter_input(INPUT_POST, 'staff_address');
@@ -12,7 +12,7 @@ $password = filter_input(INPUT_POST, 'staff_password');
 $position = filter_input(INPUT_POST, 'staff_position');
 
 $sql="INSERT INTO staff (staffid,staff_name,staff_email, staff_address, staff_phoneno,staff_password,staff_position)
-values ('$sid','$fullname','$email','$address','$phone','$password','$position')";
+values ('$id','$fullname','$email','$address','$phone','$password','$position')";
 	if (!mysqli_query($conn,$sql)){
 		
 		die ('Error: ' .mysqli_error($conn));
