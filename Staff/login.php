@@ -2,7 +2,7 @@
 session_start();
 include "config.php";
 
-if (isset($post['sid'])&& isset($_post['password'])) {
+if (isset($post['id'])&& isset($_post['password'])) {
 
     function validate($data){
         $data = trim($data);
@@ -10,7 +10,7 @@ if (isset($post['sid'])&& isset($_post['password'])) {
         $data = htmlspecialchars($data);
         return $data;
      }
-    $sid = validate($_POST['sid']);
+    $id = validate($_POST['sid']);
     $pass = validate($_POST['password']);
     if (empty($sid)) {
         header("Location: index.php?error=Email is required");
@@ -22,7 +22,7 @@ if (isset($post['sid'])&& isset($_post['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM staff WHERE staffid='$sid' AND staff_password='$pass'";
+        $sql = "SELECT * FROM staff WHERE staffid='$id' AND staff_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
