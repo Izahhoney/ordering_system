@@ -13,7 +13,7 @@
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"> <?php echo $_GET['error']; ?></p>
         <?php } ?>
-        <label>Email:</label>
+        <label>Staff ID:</label>
         <input type="text" name="id" placeholder="staff id" required><br>
         <label>Password:</label>
         <input type="password" name="password" placeholder="Password" required ><br> 
