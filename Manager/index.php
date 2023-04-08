@@ -13,13 +13,13 @@
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"> <?php echo $_GET['error']; ?></p>
         <?php } ?>
-        <label>Staff ID:</label>
-        <input type="text" name="id" placeholder="Please Enter Your Staff id" required><br>
+        <label>Email:</label>
+        <input type="text" name="uname" placeholder="Email" required><br>
         <label>Password:</label>
         <input type="password" name="password" placeholder="Password" required ><br> 
         <button type="submit">Login</button>
      </form>
-    
+     <p>Do not have an account yet? <a href="staff_register.php">Register</a>.</p>
 
 </body>
 </html>
