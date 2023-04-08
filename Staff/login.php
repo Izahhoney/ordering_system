@@ -32,7 +32,7 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
  
         if (mysqli_num_rows($result) === 1) { 
             $row = mysqli_fetch_assoc($result); 
-            if ($row['stafID'] === $id && $row['staff_password'] === $pass) { 
+            if ($row['staff_id'] === $id && $row['staff_password'] === $pass) { 
                 echo "Logged in!"; 
                 $_SESSION['staff_id'] = $row['staff_id']; 
                 $_SESSION['staff_name'] = $row['staff_name']; 
