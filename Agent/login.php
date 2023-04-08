@@ -1,29 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stlyesheet" href="stlye.css"> 
-<body>
-<h2>Login Form</h2>
+<?php 
 
-<form action="homepage.php">
- 
+session_start(); 
 
-    <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required><br></br>
+include "config.php";
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required><br></br>
-        
-    <button type="submit">Login</button> <button type="button" class="cancelbtn">Cancel</button><br></br>
-    <label>
-    
-    <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label><br></br>
+if (isset($_POST['uname']) && isset($_POST['password'])) {
 
-    
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+    function validate($data){
+       $data = trim($data);
+       $data = stripslashes($data);
+       $data = htmlspecialchars($data);
+       return $data;
+    }
 
-</body>
-</html>
+    $uname = validate($_POST['uname']);
+    $pass = validate($_POST['password']);
+
+    if (empty($uname)) {
+        header("Location: index.php?error=Email is required");
+        exit();
+    }
+    else if(empty($pass)){
+        header("Location: index.php?error=Password is required");
+        exit();
+    }
+    else{
+
+        $sql = "SELECT * FROM agent WHERE agent_email='$uname' AND agent_password='$pass'";
+
+        $result = mysqli_query($conn, $sql);
+
+        if (mysqli_num_rows($result) === 1) {
+            $row = mysqli_fetch_assoc($result);
+            if ($row['agent_email'] === $uname && $row['agent_password'] === $pass) {
+                echo "Logged in!";
+                $_SESSION['agent_email'] = $row['agent_email'];
+                $_SESSION['agent_name'] = $row['agent_name'];
+                $_SESSION['agent_password'] = $row['agent_password'];
+                $_SESSION['staff_type'] = $row['staff_type'];
+                $_SESSION['agent_phoneno'] = $row['staff_phone'];
+                $_SESSION['agent_address'] = $row['staff_address'];
+
+             
+                header("Location: home.php");
+                exit();
+
+            }
+            else{
+                header("Location: index.php?error=Incorect Email or Password");
+                exit();
+            }
+
+        }else{
+            header("Location: index.php?error=Incorect Email or Password");
+            exit();
+        }
+    }
+
+}else{
+    header("Location: index.php");
+    exit();
+}
+
+?>
