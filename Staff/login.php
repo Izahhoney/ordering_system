@@ -27,7 +27,7 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM staff WHERE staffID='$id AND staff_password='$pass'";
+        $sql = "SELECT * FROM staff WHERE staffID='$id' AND staff_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
