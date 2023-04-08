@@ -36,11 +36,11 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
             if ($row['staffID'] === $id && $row['staff_password'] === $pass) {
                 echo "Logged in!";
                 $_SESSION['staffID'] = $row['staffID'];
-                $_SESSION['staff_email'] = $row['staff_email'];
                 $_SESSION['staff_name'] = $row['staff_name'];
-                $_SESSION['staff_password'] = $row['staff_password'];
-                $_SESSION['staff_phoneno'] = $row['staff_phone'];
+                $_SESSION['staff_email'] = $row['staff_email'];
                 $_SESSION['staff_address'] = $row['staff_address'];
+                $_SESSION['staff_phoneno'] = $row['staff_phone'];
+                $_SESSION['staff_password'] = $row['staff_password'];
                 $_SESSION['staff_position'] = $row['staff_position'];
 
              
