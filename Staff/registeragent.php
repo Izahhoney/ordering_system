@@ -33,14 +33,11 @@
     <input type="password" placeholder="Enter Password" name="agent_password" id="agent_password" required>
     <hr>
 
-    <label for="waiter">Kitchen</label><br>
-    <hr>
-
     <input type="submit" value="Register">
   </div>
 
   <div class="container signin">
-    <p>Already have an account? <a href="login.php">Log in</a>.</p>
+    <p>Already have an account? <a href="registeragent.php">Log in</a>.</p>
   </div>
 </form>
 </body>
