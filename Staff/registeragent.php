@@ -33,6 +33,10 @@
     <input type="password" placeholder="Enter Password" name="agent_password" id="agent_password" required>
     <hr>
 
+    <label for="Password-repeat"><b>Repeat Password:</b></label>
+    <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
+    <hr>
+
     <input type="submit" value="Register">
   </div>
 

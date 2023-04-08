@@ -23,21 +23,21 @@ include('config.php');
     <hr>
 
    
-    <label for="StaffID"><b>StaffID</b></label>
-    <input type="text" placeholder="Enter ID" name="StaffID" id="StaffID" required><br></br>
+    <label for="staffID"><b>StaffID</b></label>
+    <input type="text" placeholder="Enter ID" name="staffID" id="staffID" required><br></br>
 
 
-    <label for="Fullname"><b>Fullname</b></label>
-    <input type="text" placeholder="Enter a name" name="Fullname" id="Fullname" required><br></br>
+    <label for="fullname"><b>Fullname</b></label>
+    <input type="text" placeholder="Enter a name" name="fullname" id="fullname" required><br></br>
 
-    <label for="Phoneno"><b>Phoneno</b></label>
-    <input type="text" placeholder="Enter Phoneno" name="Phoneno" id="Phoneno" required><br></br>
+    <label for="phoneno"><b>Phoneno</b></label>
+    <input type="text" placeholder="Enter Phoneno" name="phoneno" id="phoneno" required><br></br>
 
-    <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Enter email" name="Email" id="Email" required><br></br>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required><br></br>
 
-    <label for="Position"><b>Position:</b></label>
-    <select name="Position">
+    <label for="position"><b>Position:</b></label>
+    <select name="position">
     <option value="Staff">Staff</option>
     <option value="Manager">Manager</option>
     </select></p>
