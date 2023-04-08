@@ -20,7 +20,7 @@ if (isset($_SESSION['agent_email']) && isset($_SESSION['agent_name'])) {
     <meta name="author" content="">
 
     <title>Home | Dashboard </title>
-
+    <p><center><h1> welcome to the shop </h1></center></p>
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

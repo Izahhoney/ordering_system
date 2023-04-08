@@ -4,7 +4,7 @@ session_start();
 
 include "config.php";
 
-if (isset($_POST['uname']) && isset($_POST['password'])) {
+if (isset($_POST['id']) && isset($_POST['password'])) {
 
     function validate($data){
        $data = trim($data);
@@ -13,10 +13,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
        return $data;
     }
 
-    $uname = validate($_POST['uname']);
+    $id = validate($_POST['id']);
     $pass = validate($_POST['password']);
 
-    if (empty($uname)) {
+    if (empty($id)) {
         header("Location: index.php?error=Email is required");
         exit();
     }
@@ -26,19 +26,22 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM agent WHERE agent_email='$uname' AND agent_password='$pass'";
+        $sql = "SELECT * FROM staff WHERE staffID='$id' AND staff_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['agent_email'] === $uname && $row['agent_password'] === $pass) {
+            if ($row['staffID'] === $id && $row['staff_password'] === $pass) {
                 echo "Logged in!";
-                $_SESSION['agent_email'] = $row['agent_email'];
-                $_SESSION['agent_name'] = $row['agent_name'];
-                $_SESSION['agent_password'] = $row['agent_password'];
-                $_SESSION['agent_phoneno'] = $row['agent_phone'];
-                $_SESSION['agent_address'] = $row['agent_address'];
+
+                $_SESSION['staffID'] = $row['staffID'];
+                $_SESSION['staff_email'] = $row['staff_email'];
+                $_SESSION['staff_name'] = $row['staff_name'];
+                $_SESSION['staff_password'] = $row['staff_password'];
+                $_SESSION['staff_phoneno'] = $row['staff_phone'];
+                $_SESSION['staff_address'] = $row['staff_address'];
+                $_SESSION['staff_position'] = $row['staff_position'];
 
              
                 header("Location: home.php");
