@@ -26,7 +26,7 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
     } 
     else{ 
  
-        $sql = "SELECT * FROM Staff WHERE staff_id='$id' AND staff_password='$pass'"; 
+        $sql = "SELECT * FROM staff WHERE staff_id='$id' AND staff_password='$pass'"; 
  
         $result = mysqli_query($conn, $sql); 
  
@@ -34,7 +34,7 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
             $row = mysqli_fetch_assoc($result); 
             if ($row['staff_id'] === $id && $row['staff_password'] === $pass) { 
                 echo "Logged in!"; 
-                $_SESSION['staff_id'] = $row['staf_id']; 
+                $_SESSION['staff_id'] = $row['staff_id']; 
                 $_SESSION['staff_name'] = $row['staff_name']; 
                 $_SESSION['staff_address'] = $row['staff_address']; 
                 $_SESSION['staff_phoneno'] = $row['staff_phoneno']; 

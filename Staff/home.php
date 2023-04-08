@@ -2,7 +2,7 @@
 
 session_start();
 
-if (isset($_SESSION['staff_id']) && isset($_SESSION['staff_name'])) {
+if (isset($_SESSION['staff_id']) && isset($_SESSION['staff_email'])) {
  ?>
 
 
