@@ -8,7 +8,7 @@ $fullname = filter_input(INPUT_POST, 'agent_name');
 $email = filter_input(INPUT_POST, 'agent_email');
 $address = filter_input(INPUT_POST, 'agent_address');
 $phone = filter_input(INPUT_POST, 'agent_phoneno');
-$password = filter_input(INPUT_POST, 'sagent_password');
+$password = filter_input(INPUT_POST, 'agent_password');
 
 $type = filter_input(INPUT_POST, 'staff_type');
 
