@@ -34,7 +34,7 @@
     <hr>
 
     <label for="position"><b>Choose a Position:</b></label>
-    <select name="position" id="carsstaff_position">
+    <select name="position" id="staff_position">
     <option value="Staff">Staff</option>
     <option value="Manager">Manager</option>
   </select><br><br>
