@@ -2,7 +2,7 @@
 session_start();
 include "config.php";
 
-if (isset($post['id'])&& isset($_post['password'])) {
+if (isset($post['sid'])&& isset($_post['password'])) {
 
     function validate($data){
         $data = trim($data);
@@ -10,9 +10,9 @@ if (isset($post['id'])&& isset($_post['password'])) {
         $data = htmlspecialchars($data);
         return $data;
      }
-    $id = validate($_POST['id']);
+    $sid = validate($_POST['sid']);
     $pass = validate($_POST['password']);
-    if (empty($uname)) {
+    if (empty($sid)) {
         header("Location: index.php?error=Email is required");
         exit();
     }
@@ -22,15 +22,15 @@ if (isset($post['id'])&& isset($_post['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM staff WHERE id_staff='$id' AND staff_password='$pass'";
+        $sql = "SELECT * FROM staff WHERE staffid='$sid' AND staff_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['id_staff'] === $id && $row['staff_password'] === $pass) {
+            if ($row['staffid'] === $sid && $row['staff_password'] === $pass) {
                 echo "Logged in!";
-                $_SESSION['id_staff'] = $row['id_staff'];
+                $_SESSION['staffid'] = $row['staffid'];
                 $_SESSION['staff_name'] = $row['staff_name'];
                 $_SESSION['staff_email'] = $row['staff_email'];
                 $_SESSION['staff_phoneno'] = $row['staff_phoneno'];
