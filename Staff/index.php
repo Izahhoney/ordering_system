@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>LOGIN | AGENT</title>
+    <title>LOGIN | STAFF</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -19,7 +19,7 @@
         <input type="password" name="password" placeholder="Password" required ><br> 
         <button type="submit">Login</button>
      </form>
-     <p>Do not have an account yet? <a href="staff_register.php">Register</a>.</p>
+    
 
 </body>
 </html>
