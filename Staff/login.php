@@ -22,15 +22,15 @@ if (isset($post['id'])&& isset($_post['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM staff WHERE staff_id='$id' AND staff_password='$pass'";
+        $sql = "SELECT * FROM staff WHERE id_staff='$id' AND staff_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['staff_email'] === $uname && $row['staff_password'] === $pass) {
+            if ($row['id_staff'] === $id && $row['staff_password'] === $pass) {
                 echo "Logged in!";
-                $_SESSION['staff_id'] = $row['staff_id'];
+                $_SESSION['id_staff'] = $row['id_staff'];
                 $_SESSION['staff_name'] = $row['staff_name'];
                 $_SESSION['staff_email'] = $row['staff_email'];
                 $_SESSION['staff_phoneno'] = $row['staff_phoneno'];

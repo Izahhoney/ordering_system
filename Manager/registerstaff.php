@@ -14,7 +14,7 @@
     <hr>
 
     <label for="id"><b>Staff ID:</b></label>
-    <input type="text" placeholder="Enter Staff Id" name="staff_id" id="staff_id" required>
+    <input type="text" placeholder="Enter Staff Id" name="id_staff" id="id_staff" required>
     <hr>
 
     <label for="fullname"><b>Name:</b></label>
