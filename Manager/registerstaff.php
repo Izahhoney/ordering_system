@@ -29,7 +29,7 @@
     <input type="text" placeholder="Enter address" name="staff_address" id="staff_address" required>
     <hr>
 
-    <label for="phoneno"><b>HP Number:</b></label>
+    <label for="phone"><b>HP Number:</b></label>
     <input type="text" placeholder="Enter Your Phone Number" name="staff_phoneno" id="staff_phoneno" required>
     <hr>
 
