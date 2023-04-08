@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER | AGENT</title>
 </head>
 <body>
+<form method="post" action="staff_registerData.php">
+  <div class="staff container">
+    <h1>Agent Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
 
-<form class="form" action="agentdataregister.php" method="POST">
-<form action="agentdataregister.php">
+    <label for="name"><b>Name:</b></label>
+    <input type="text" placeholder="Enter Name" name="agent_name" id="agent_name" required>
+    <hr>
 
- 
-    <h1>Register Agent</h1>
-    <p>Please fill in this form to register agent.</p>
-    
-    <label for="Fullname"><b>Fullame</b></label>
-    <input type="text" placeholder="Enter Name" name="Fullname" id="Fullname" required><br></br>
+    <label for="email"><b>Email:</b></label>
+    <input type="text" placeholder="Enter email" name="agent_email" id="agent_email" required>
+    <hr>
 
-    <label for="Email"><b>Email</b></label>
-    <input type="text" placeholder="Email: @yahoo.com" name="Email" id="Email" required><br></br>
+    <label for="address"><b>Address:</b></label>
+    <input type="text" placeholder="Enter address" name="agent_address" id="agent_address" required>
+    <hr>
 
+    <label for="phoneno"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="agent_phoneno" id="agent_phoneno" required>
+    <hr>
 
-    <label for="Address"><b>Address</b></label>
-    <input type="text" placeholder="Enter your address" name="Address" id="Address" required><br></br>
+    <label for="password"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="agent_password" id="agent_password" required>
+    <hr>
 
-    <label for="Phoneno"><b>Phone no</b></label>
-    <input type="text" placeholder="Enter phoneno" name="Phoneno" id="Phoneno" required><br></br>
+    <label for="waiter">Kitchen</label><br>
+    <hr>
 
-    <label for="Password"><b>Password</b></label>
-    <input type="Password" placeholder="Enter Password" name="Password" id="Password" required><br></br>
+    <input type="submit" value="Register">
+  </div>
 
-    <label for="Password-repeat"><b>Repeat Password</b></label>
-    <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
-   
-
-    <button type="submit" class="registerbtn">Register</button><br></br>
-   
-
-    <p>By creating an account you agree to our <a href="login.php">Terms & Privacy</a>.</p><br></br>
-
-  </form>
+  <div class="container signin">
+    <p>Already have an account? <a href="login.php">Log in</a>.</p>
+  </div>
+</form>
 </body>
 </html>
