@@ -8,7 +8,7 @@ if (isset($_SESSION['agent_email']) && isset($_SESSION['agent_name'])) {
 
 <?php include('header.php'); ?>
 <body>
-<?php include('navbar.php'); ?>
+<?php include('navigation.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>

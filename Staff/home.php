@@ -8,7 +8,7 @@ if (isset($_SESSION['staff_id']) && isset($_SESSION['staff_email'])) {
 
 <?php include('header.php'); ?>
 <body>
-<?php include('navbar.php'); ?>
+<?php include('navigation.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -3,16 +3,23 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'config.php';
+$id = filter_input(INPUT_POST, 'staffID');
+$fullname = filter_input(INPUT_POST, 'staff_name');
+$email = filter_input(INPUT_POST, 'staff_email');
+$address = filter_input(INPUT_POST, 'staff_address');
+$phone = filter_input(INPUT_POST, 'staff_phoneno');
+$password = filter_input(INPUT_POST, 'staff_password');
+$position = filter_input(INPUT_POST, 'staff_position');
 
-$sql="INSERT INTO Staff (StaffID,Fullname,Email,Position,Address,Phoneno,Password)
-values ('$_POST[StaffID]','$_POST[Fullname]','$_POST[Email]','$_POST[Position]','$_POST[Address]','$_POST[Phoneno]','$_POST[Password]')";
+$sql="INSERT INTO Staff (staffID,staff_name,staff_email, staff_address, staff_phoneno,staff_password,staff_position)
+values ('$_POST[fullname]','$_POST[email]','$_POST[sddress]','$_POST[phoneno]','$_POST[password]','$_POST[position]'))";
 	if (!mysqli_query($conn,$sql)){
 		
 		die ('Error: ' .mysqli_error($conn));
 	}
 
-
 echo "<script
-type='text/jscript'>alert('1 staff record succesfully added')</script>";
-header('refresh:1 url=registerstaff.php');
+type='text/jscript'>alert('Register agent has been submitted!')</script>";
+header('refresh:1 url=registeragent.php');
 ?>
+
