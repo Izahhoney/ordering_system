@@ -4,7 +4,15 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'config.php';
 
-$sql="INSERT INTO Agent (Fullname,Email, Address, Phoneno,Password)
+$fullname = filter_input(INPUT_POST, 'agent_name');
+$email = filter_input(INPUT_POST, 'agent_email');
+$address = filter_input(INPUT_POST, 'agent_address');
+$phone = filter_input(INPUT_POST, 'agent_phoneno');
+$password = filter_input(INPUT_POST, 'sagent_password');
+
+$type = filter_input(INPUT_POST, 'staff_type');
+
+$sql="INSERT INTO Agent (agent_name,agent_email, agent_address, agent_phoneno,agent_password)
 values ('$_POST[Fullname]','$_POST[Email]','$_POST[Address]','$_POST[Phoneno]','$_POST[Password]')";
 	if (!mysqli_query($conn,$sql)){
 		
