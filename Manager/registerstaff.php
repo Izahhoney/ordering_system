@@ -28,23 +28,23 @@
             </div>
 
             <div class="input-box">
-                <label>Address</label>
+                <label><b>Address</b></label>
                 <input type="text" placeholder="Enter staff address" name="staff_address" id="staff_address" required><br></br> 
  
             </div>
 
             <div class="input-box">
-                <label>H/P Number</label>
+                <label><b>H/P Number</b></label>
                 <input type="text" placeholder="Enter staff H/P No" name="staff_hpno" id="staff_hpno" required><br></br> 
  
             </div>
 
 
             <div class="input-box">
-                <label for ="staff_position"> Choose a Position:</label>
+                <label for ="staff_position"><b>Choose a Position:</b></label>
                 <select name="staff_position" id="staff_position">
-                <option value="Staff">Staff</option>
-                <option value="Manager">Manager</option> 
+                <option value="Staff"><b>Staff</b></option>
+                <option value="Manager"><b>Manager</b></option> 
                 </select>
                 <br><br>
             </div>
@@ -58,7 +58,7 @@
             <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
             </div>
 
-            <button type="submit" class="registerbtn">Register</button>
+            <button type="submit" class="registerbtn"><b>Register</b></button>
 
 </body>
 </html>
