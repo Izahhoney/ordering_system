@@ -51,8 +51,12 @@
             </div>
 
             <div class="input-box">
-                <label>Position</label>
-                <input type="text" placeholder="Enter staff password" name="staff_position" id="staff_position" required><br></br> 
+                <labe for ="position"> Choose a Position:</label>
+                <select name="position" id="position">
+                <option value="Staff">Staff</option>
+                <option value="Manager">Manager</option> 
+                </select>
+                <br><br>
  
             </div>
 
