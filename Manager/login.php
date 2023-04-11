@@ -38,7 +38,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
                 $_SESSION['id_staff'] = $row['id_staff']; 
                 $_SESSION['staff_name'] = $row['staff_name']; 
                 $_SESSION['staff_address'] = $row['staff_address']; 
-                $_SESSION['staff_phoneno'] = $row['staff_phoneno']; 
+                $_SESSION['staff_hpno'] = $row['staff_hpno']; 
                 $_SESSION['staff_password'] = $row['staff_password']; 
                 $_SESSION['staff_position'] = $row['staff_position'];
 
