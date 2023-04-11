@@ -15,14 +15,14 @@
     <section class="container">
 
             <div class="input-box">
-                <label>Staff Id</label>
+                <label><b>Staff Id</b></label>
                 <input type="text" placeholder="Enter staff id" name="staff_id" id="staff_id" required><br></br> 
  
             </div>
 
 
             <div class="input-box">
-                <label>Full Name</label>
+                <label><b>Full Name</b></label>
                 <input type="text" placeholder="Enter staff full name" name="staff_name" id="staff_name" required><br></br> 
  
             </div>
@@ -39,6 +39,16 @@
  
             </div>
 
+
+            <div class="input-box">
+                <label for ="staff_position"> Choose a Position:</label>
+                <select name="staff_position" id="staff_position">
+                <option value="Staff">Staff</option>
+                <option value="Manager">Manager</option> 
+                </select>
+                <br><br>
+            </div>
+
             <div class="input-box">
             <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter Password" name="staff_password" id="staff_password" required><br></br>
@@ -46,16 +56,6 @@
 
             <label for="Password-repeat"><b>Repeat Password:</b></label>
             <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
-            </div>
-
-            <div class="input-box">
-                <label for ="'staff_position"> Choose a Position:</label>
-                <select name="'staff_position" id="'staff_position">
-                <option value="Staff">Staff</option>
-                <option value="Manager">Manager</option> 
-                </select>
-                <br><br>
- 
             </div>
 
             <button type="submit" class="registerbtn">Register</button>
