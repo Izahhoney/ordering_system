@@ -7,11 +7,11 @@ $id = filter_input(INPUT_POST, 'staff_id');
 $fullname = filter_input(INPUT_POST, 'staff_name');
 
 $address = filter_input(INPUT_POST, 'staff_address');
-$phone = filter_input(INPUT_POST, 'staff_phoneno');
+$phone = filter_input(INPUT_POST, 'staff_hpno');
 $password = filter_input(INPUT_POST, 'staff_password');
 $position = filter_input(INPUT_POST, 'staff_position');
 
-$sql="INSERT INTO staff (staff_id,staff_name,staff_address, staff_phoneno,staff_password,staff_position)
+$sql="INSERT INTO staff (staff_id,staff_name,staff_address, staff_hpno,staff_password,staff_position)
 values ('$id','$fullname','$address','$phone','$password','$position')";
 	if (!mysqli_query($conn,$sql)){
 		
