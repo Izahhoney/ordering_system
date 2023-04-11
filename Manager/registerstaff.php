@@ -49,7 +49,7 @@
             </div>
 
             <div class="input-box">
-                <labe for ="'staff_position"> Choose a Position:</label>
+                <label for ="'staff_position"> Choose a Position:</label>
                 <select name="'staff_position" id="'staff_position">
                 <option value="Staff">Staff</option>
                 <option value="Manager">Manager</option> 
