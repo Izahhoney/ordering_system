@@ -41,7 +41,7 @@
 
             <div class="input-box">
             <label for="password"><b>Password:</b></label>
-            <input type="password" placeholder="Enter Password" name="staff_password" id="staff_password" required>
+            <input type="password" placeholder="Enter Password" name="staff_password" id="staff_password" required><br></br>
     
 
             <label for="Password-repeat"><b>Repeat Password:</b></label>
