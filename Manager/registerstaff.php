@@ -10,7 +10,7 @@
 <body>
 
 <H2>Staff Registration</H2>
-<form class="form" action="staffregisterdata.php" method="POST"> 
+<form class="form" action="staffdataregister.php" method="POST"> 
 <form action="staffregisterdata.php"> 
     <section class="container">
 
