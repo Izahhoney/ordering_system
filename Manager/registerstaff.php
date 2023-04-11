@@ -40,9 +40,12 @@
             </div>
 
             <div class="input-box">
-                <label>Password</label>
-                <input type="text" placeholder="Enter staff password" name="staff_password" id="staff_password" required><br></br> 
- 
+            <label for="password"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="staff_password" id="staff_password" required>
+    
+
+            <label for="Password-repeat"><b>Repeat Password:</b></label>
+            <input type="Password" placeholder="Repeat Password" name="password-repeat" id="Password-repeat" required><br></br>
             </div>
 
             <div class="input-box">
