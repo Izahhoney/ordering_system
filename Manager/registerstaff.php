@@ -19,12 +19,7 @@
                 <input type="text" placeholder="Enter staff id" name="staff_id" id="staff_id" required><br></br> 
  
             </div>
-       
-            <div class="input-box">
-                <label>E-mail</label>
-                <input type="text" placeholder="Enter staff email" name="staff_email" id="staff_email" required><br></br> 
- 
-            </div>
+
 
             <div class="input-box">
                 <label>Full Name</label>
