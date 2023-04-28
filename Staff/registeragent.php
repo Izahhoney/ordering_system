@@ -31,7 +31,7 @@
     <hr>
 
     <label for="phoneno"><b>HP Number:</b></label>
-    <input type="text" placeholder="Enter Email" name="agent_phoneno" id="agent_phoneno" required>
+    <input type="text" placeholder="Enter Email" name="agent_hpno" id="agent_hpno" required>
     <hr>
 
     <label for="password"><b>Password:</b></label>
