@@ -11,7 +11,7 @@ $address = filter_input(INPUT_POST, 'agent_address');
 $phone = filter_input(INPUT_POST, 'agent_hpno');
 $password = filter_input(INPUT_POST, 'agent_password');
 
-$sql="INSERT INTO Agent (agent_id, agent_name,agent_email, agent_address, agent_hpno,agent_password)
+$sql="INSERT INTO agent (agent_id, agent_name,agent_email, agent_address, agent_hpno,agent_password)
 values ('$id','$fullname','$email','$address','$phone','$password')";
 	if (!mysqli_query($conn,$sql)){
 		
