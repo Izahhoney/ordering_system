@@ -13,6 +13,11 @@
     <p>Please fill in this form to create an account.</p>
     <hr>
 
+
+    <label for="name"><b>Agent ID:</b></label>
+    <input type="text" placeholder="Enter ID" name="agent_id" id="agent_id" required>
+    <hr>
+
     <label for="name"><b>Name:</b></label>
     <input type="text" placeholder="Enter Name" name="agent_name" id="agent_name" required>
     <hr>
