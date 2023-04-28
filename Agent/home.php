@@ -2,7 +2,7 @@
 
 session_start();
 
-if (isset($_SESSION['agent_email']) && isset($_SESSION['agent_name'])) {
+if (isset($_SESSION['agent_id']) && isset($_SESSION['agent_name'])) {
  ?>
 
 

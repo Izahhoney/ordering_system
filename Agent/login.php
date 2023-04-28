@@ -26,14 +26,15 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
     }
     else{
 
-        $sql = "SELECT * FROM agent WHERE agent_email='$uname' AND agent_password='$pass'";
+        $sql = "SELECT * FROM agent WHERE agent_id='$uname' AND agent_password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) === 1) {
             $row = mysqli_fetch_assoc($result);
-            if ($row['agent_email'] === $uname && $row['agent_password'] === $pass) {
+            if ($row['agent_id'] === $uname && $row['agent_password'] === $pass) {
                 echo "Logged in!";
+                $_SESSION['agent_id'] = $row['agent_id'];
                 $_SESSION['agent_email'] = $row['agent_email'];
                 $_SESSION['agent_name'] = $row['agent_name'];
                 $_SESSION['agent_password'] = $row['agent_password'];
