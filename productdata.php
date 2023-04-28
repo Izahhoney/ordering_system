@@ -4,7 +4,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'config.php';
 
-$sql="INSERT INTO product (productID,Product_name, Price, Qty,Desc,Status,Flavour)
+
+
+$sql="INSERT INTO product (productID,product_name, price, qty,desc,status,flavour)
 values ('$_POST[productID]','$_POST[Product_name]','$_POST[Price]','$_POST[Qty]','$_POST[Desc]','$_POST[Status]','$_POST[Flavour]')";
 	if (!mysqli_query($conn,$sql)){
 		
